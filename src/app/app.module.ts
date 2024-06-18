@@ -11,8 +11,8 @@ import { PokemonModule } from './pokemon/pokemon.module';
     PageNotFoundComponent,
   ],
   imports: [
-    BrowserModule,
     PokemonModule,
+    BrowserModule,
     AppRoutingModule,
   ],
   providers: [],
