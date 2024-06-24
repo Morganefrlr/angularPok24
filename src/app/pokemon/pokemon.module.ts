@@ -9,10 +9,12 @@ import { PokemonService } from './pokemon.service';
 import { FormsModule } from '@angular/forms';
 import { PokemonFormComponent } from './pokemon-form/pokemon-form.component';
 import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
+import { AddPokemonComponent } from './add-pokemon/add-pokemon.component';
 
 
 const pokemonRoutes: Routes = [
   {path: 'edit/pokemon/:id' , component: EditPokemonComponent},
+  {path: 'pokemon/add', component: AddPokemonComponent},
   {path: 'pokemons', component: ListPokemonComponent},
   {path:'pokemons/:id', component: DetailPokemonComponent},
 ]
@@ -25,6 +27,7 @@ const pokemonRoutes: Routes = [
     BorderCardDirective,
     PokemonFormComponent,
     EditPokemonComponent,
+    AddPokemonComponent,
   ],
   imports: [
     CommonModule,
