@@ -13,7 +13,10 @@ export class SearchPokemonComponent implements OnInit{
   pokemons$: Observable<Pokemon[]>
 
 
-  constructor(private router : Router, private pokemonService : PokemonService){}
+  constructor(
+    private router : Router, 
+    private pokemonService : PokemonService
+  ){}
 
 
  ngOnInit(): void {
